@@ -1,0 +1,8 @@
+- hosts: local
+  become: yes
+  tasks:
+    - name: Install curl on Debian/Ubuntu
+      apt:
+        name: curl
+        state: present
+        update_cache: yes
